@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-import IPython
 import os.path
-import numpy as np
 import matplotlib.pyplot as plt
-#def parser(filename):
+
 def parser():
 	basePath = os.path.dirname(__file__)
 	filePath = os.path.abspath(os.path.join(basePath,"..","..","wean.dat"))

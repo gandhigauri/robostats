@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-import IPython
 import os.path
-import sys
-from collections import namedtuple
-from collections import defaultdict
-
 def parser():
 	OData = {}
 	LData = {}
@@ -23,12 +18,10 @@ def parser():
 		elif lines[i][0] == 'O':
 			l = lines[i].split()
 			OData[i] = tuple(float(l[x]) for x in range(1,len(l)))	
-
 	return OData, LData
 
 def main():
 	OData, LData = parser()
-	IPython.embed()
 
 if __name__ == "__main__": 
 	main()
